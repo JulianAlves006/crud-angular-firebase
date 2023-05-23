@@ -26,6 +26,10 @@ import { EditContatoComponent } from './contato/edit-contato/edit-contato.compon
 
 import { ListContatoComponent } from './contato/list-contato/list-contato.component';
 
+import {  BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -50,7 +54,15 @@ import { ListContatoComponent } from './contato/list-contato/list-contato.compon
 
     AngularFireDatabaseModule,
 
-    AppRoutingModule
+    AppRoutingModule,
+
+    FormsModule,
+
+    ReactiveFormsModule,
+
+    BrowserAnimationsModule, // required animations module
+
+    ToastrModule.forRoot(), // ToastrModule added
 
   ],
 
