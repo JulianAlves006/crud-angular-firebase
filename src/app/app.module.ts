@@ -30,6 +30,8 @@ import {  BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { NgxPaginationModule } from 'ngx-pagination';
+
 
 
 @NgModule({
@@ -63,6 +65,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule, // required animations module
 
     ToastrModule.forRoot(), // ToastrModule added
+    
+    NgxPaginationModule
 
   ],
 
