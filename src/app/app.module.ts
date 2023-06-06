@@ -65,7 +65,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     BrowserAnimationsModule, // required animations module
 
     ToastrModule.forRoot(), // ToastrModule added
-    
+
     NgxPaginationModule
 
   ],
