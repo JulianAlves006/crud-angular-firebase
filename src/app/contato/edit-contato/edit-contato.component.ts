@@ -58,8 +58,9 @@ export class EditContatoComponent implements OnInit{
 
       idade: new FormControl('', Validators.required),
 
-      telefone: new FormControl('', [Validators.required,  Validators.pattern('^[0-9]+$')])
+      telefone: new FormControl('', [Validators.required,  Validators.pattern('^[0-9]+$')]),
 
+      link: new FormControl('', Validators.required),
     });
 
   }
@@ -128,6 +129,11 @@ export class EditContatoComponent implements OnInit{
 
   }
 
+  get link(){
+
+    return this.contatoForm.get('link');
+
+  }
+
 }
 
- 

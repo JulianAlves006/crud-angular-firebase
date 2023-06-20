@@ -2,7 +2,7 @@
 
 <div class="pt-3 pb-2 mb-3 border-bottom">
 
-  <h2 class="h2">Adicionar Contato</h2>
+  <h2 class="h2">Adicionar Musica</h2>
 
 </div>
 
@@ -56,13 +56,13 @@
 
             [ngClass]="{'text-danger': idade?.touched && idade?.invalid}"
 
-            for="idade" class="form-label">Idade</label>
+            for="idade" class="form-label">Banda/Cantor</label>
 
           <input
 
             [ngClass]="{'is-invalid': idade?.touched && idade?.invalid, 'is-valid': idade?.touched && idade?.valid}"
 
-            type="number"
+            type="text"
 
             formControlName="idade"
 
@@ -74,7 +74,7 @@
 
           <!-- Validation FeedBack -->
 
-          <div class="invalid-feedback"><sup>*</sup>Idade obrigatório</div>
+          <div class="invalid-feedback"><sup>*</sup>Banda/Autor obrigatório</div>
 
         </div>
 
@@ -92,13 +92,13 @@
 
             [ngClass]="{'text-danger': telefone?.touched && telefone?.invalid}"
 
-            for="telefone" class="form-label">Telefone:</label>
+            for="telefone" class="form-label">Ano de lançamento</label>
 
           <input
 
             [ngClass]="{'is-invalid': telefone?.touched && telefone?.invalid, 'is-valid': telefone?.touched && telefone?.valid}"
 
-            type="text"
+            type="number"
 
             formControlName="telefone"
 
@@ -111,6 +111,36 @@
           <!-- Validation FeedBack -->
 
           <div class="invalid-feedback"><sup>*</sup>Informe apenas números</div>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-12 mb-3">
+
+          <label>Link da musica</label>
+
+          <input
+
+            type="text"
+
+            formControlName="link"
+
+            class="form-control"
+
+            required
+
+          />
+
+          <!-- errors-->
+
+          <p *ngIf="link?.touched && link?.invalid" class="error">
+
+            <sup>*</sup>Informe o link
+
+          </p>
 
         </div>
 
@@ -130,7 +160,7 @@
 
         <button type="submit" class="btn btn-success mx-2" [disabled]="!contatoForm.valid">
 
-          Adicionar Contato
+          Adicionar Musica
 
         </button>
 

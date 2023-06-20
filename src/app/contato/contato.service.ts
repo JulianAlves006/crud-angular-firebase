@@ -44,6 +44,8 @@ export class ContatoService {
 
       idade: contato.idade,
 
+      link: contato.link,
+
     });
 
   }

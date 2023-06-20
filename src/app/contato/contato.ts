@@ -8,4 +8,6 @@ export interface Contato {
 
   telefone: String;
 
-} 
+  link: String;
+
+}

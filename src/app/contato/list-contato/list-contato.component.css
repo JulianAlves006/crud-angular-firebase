@@ -20,7 +20,7 @@
 
   border: 5px solid #f3f3f3; /* Light grey */
 
-  border-top: 5px solid #3d3e3f; /* gray */
+  border-top: 5px solid #d62121; /* gray */
 
   position: absolute;
 
@@ -37,7 +37,6 @@
   animation: spin 2s linear infinite;
 
 }
-
 
 
 @keyframes spin {
