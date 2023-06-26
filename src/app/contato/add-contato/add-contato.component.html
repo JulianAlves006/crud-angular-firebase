@@ -120,9 +120,15 @@
 
         <div class="col-md-12 mb-3">
 
-          <label>Link da musica</label>
+          <label
+
+            [ngClass]="{'text-danger': link?.touched && link?.invalid}"
+
+            for="link" class="form-label">Link</label>
 
           <input
+
+            [ngClass]="{'is-invalid': link?.touched && link?.invalid, 'is-valid': link?.touched && link?.valid}"
 
             type="text"
 
@@ -134,13 +140,9 @@
 
           />
 
-          <!-- errors-->
+          <!-- Validation FeedBack -->
 
-          <p *ngIf="link?.touched && link?.invalid" class="error">
-
-            <sup>*</sup>Informe o link
-
-          </p>
+          <div class="invalid-feedback"><sup>*</sup>Link obrigatório</div>
 
         </div>
 
