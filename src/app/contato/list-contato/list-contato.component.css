@@ -47,3 +47,8 @@
 
 }
 
+.center{
+  display: block;
+  position: fixed;
+  left: 50%;
+}
